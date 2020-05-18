@@ -1,6 +1,8 @@
-# chat-nuxt
+# Nuxt-chat
 
-> My epic Nuxt.js project
+> Simple anonymous chat for an unlimited number of members and rooms.
+>
+> To start chat, enter a nickname and a room. Chat isn't saved after leaving the chat.
 
 ## Build Setup
 
@@ -19,4 +21,3 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
