@@ -1,6 +1,7 @@
 export const state = () => ({
   user: {},
   messages: [],
+  users: [],
 
 });/*state единтсвенная константа которая должна быть функцией*/
 
@@ -11,12 +12,15 @@ export const mutations = {
   clearData(state) {
     state.user = {};
     state.messages = [];
+    state.users = [];
+  },
+
+  SOCKET_newMessage(state, message) {
+    state.messages.push(message)
+  },
+
+  SOCKET_updateUsers(state, users) {
+    state.users = users
   }
 };
 
-export const actions = {
-  /*пакет  socket io будет автоматически вызывать этот action */
-  SOCKET_newMessage(ctx, data) {
-    console.log('Message received', data) /*Сработает если сервер нам чтото отпавит*/
-  }
-};
